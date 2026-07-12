@@ -18,72 +18,6 @@ FitTrack allows users to:
 
 ---
 
-# 🏗️ Microservices Architecture
-
----
-
-# ⚙️ Tech Stack
-
-## Backend
-- Java
-- Spring Boot
-- Spring Cloud
-- Spring Data JPA
-- Hibernate
-
-## Microservices Components
-- Spring Cloud Gateway
-- Eureka Service Discovery
-- Spring Cloud Config Server
-
-## Frontend
-- React.js
-- Material UI (MUI)
-- Axios
-
-## Database
-- PostgreSQL
-- MongoDB Atlas
-
-## Security
-- Keycloak
-- OAuth2
-- PKCE Authentication Flow
-- Google Login Integration
-
-## Messaging
-- RabbitMQ
-- Apache Kafka
-
-## DevOps
-- Docker
-- Docker Compose
-
----
-
-# ✨ Features
-
-## 👤 User Management
-- Secure user authentication
-- User profile management
-- Keycloak-based authorization
-
-## 🏋️ Activity Tracking
-- Add fitness activities
-- Track:
-  - Activity type
-  - Duration
-  - Calories burned
-  - Workout details
-
-## 🔄 Microservice Communication
-- REST API communication
-- Event-driven communication using RabbitMQ/Kafka
-- Service registration using Eureka
-- Centralized configuration using Config Server
-
----
-
   ## 🏗️ System Architecture
 
 ```mermaid
@@ -140,4 +74,139 @@ flowchart TD
     Docker -. Deploys .-> ActivityService
     Docker -. Deploys .-> Eureka
     Docker -. Deploys .-> Config
+```
+## ⚙️ Tech Stack
+
+### Backend
+- Spring Boot
+- Spring Cloud (Eureka Server, API Gateway)
+- Hibernate
+- Spring Data JPA
+
+### Frontend
+- React.js
+- Material UI (MUI)
+
+### Security
+- Keycloak
+- OAuth2
+- PKCE Authentication Flow
+
+### Messaging
+- RabbitMQ
+
+### Database
+- PostgreSQL
+- MongoDB Atlas
+
+### Containerization
+- Docker
+
+## 🚀 How to Run the Project
+
+### Prerequisites
+
+Make sure you have installed:
+
+- Java 17+
+- Maven
+- Node.js and npm
+- Docker
+- PostgreSQL
+- MongoDB Atlas
+- Keycloak
+
+---
+
+## 🔧 Backend Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Nikita-Saxena391/FitTrack-microservices.git
+```
+
+2. Navigate to each microservice folder and run:
+
+```bash
+mvn spring-boot:run
+```
+
+3. Start the services in the following order:
+
+```
+1. Config Server
+2. Eureka Server
+3. API Gateway
+4. User Service
+5. Activity Service
+```
+
+---
+
+## 🌐 Frontend Setup
+
+1. Navigate to the frontend directory:
+
+```bash
+cd frontend
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the React application:
+
+```bash
+npm start
+```
+
+---
+
+## 🐳 Running with Docker
+
+Build and start containers using:
+
+```bash
+docker-compose up --build
+```
+
+To stop the containers:
+
+```bash
+docker-compose down
+```
+
+---
+
+## 🔐 Authentication Setup
+
+1. Start Keycloak server.
+2. Create a new realm.
+3. Configure the client for OAuth2 PKCE authentication.
+4. Enable Google login provider.
+5. Update frontend configuration with Keycloak details.
+
+---
+
+## ✅ Application Access
+
+After starting all services:
+
+- Frontend:
+```
+http://localhost:5173
+```
+
+- API Gateway:
+```
+http://localhost:8080
+```
+
+- Eureka Server:
+```
+http://localhost:8761
 ```
