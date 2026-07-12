@@ -1,4 +1,4 @@
-# 🏋️ FitTrack - Fitness Tracker Microservice Web Application
+# 1. FitTrack - Fitness Tracker Microservice Web Application
 
 A full-stack **Fitness Tracker Microservice Web Application** designed to help users log, manage, and track their fitness activities in a secure, scalable, and distributed environment.
 
@@ -6,7 +6,7 @@ The application follows a **microservices architecture** with secure authenticat
 
 ---
 
-## 📌 Project Overview
+## 2. Project Overview
 
 FitTrack allows users to:
 
@@ -18,7 +18,7 @@ FitTrack allows users to:
 
 ---
 
-  ## 🏗️ System Architecture
+  ## 3. System Architecture
 
 ```mermaid
 flowchart TD
@@ -75,7 +75,7 @@ flowchart TD
     Docker -. Deploys .-> Eureka
     Docker -. Deploys .-> Config
 ```
-## ⚙️ Tech Stack
+## 4. Tech Stack
 
 ### Backend
 - Spring Boot
@@ -118,7 +118,7 @@ Make sure you have installed:
 
 ---
 
-## 🔧 Backend Setup
+##  Backend Setup
 
 1. Clone the repository:
 
@@ -144,7 +144,7 @@ mvn spring-boot:run
 
 ---
 
-## 🌐 Frontend Setup
+##  Frontend Setup
 
 1. Navigate to the frontend directory:
 
@@ -192,7 +192,7 @@ docker-compose down
 
 ---
 
-## ✅ Application Access
+##  Application Access
 
 After starting all services:
 
