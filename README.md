@@ -102,9 +102,9 @@ flowchart TD
 ### Containerization
 - Docker
 
-## 🚀 How to Run the Project
+## 5. How to Run the Project
 
-### Prerequisites
+### 5.1 Prerequisites
 
 Make sure you have installed:
 
@@ -118,7 +118,7 @@ Make sure you have installed:
 
 ---
 
-##  Backend Setup
+## 5.2 Backend Setup
 
 1. Clone the repository:
 
@@ -144,7 +144,7 @@ mvn spring-boot:run
 
 ---
 
-##  Frontend Setup
+## 5.3 Frontend Setup
 
 1. Navigate to the frontend directory:
 
@@ -166,7 +166,7 @@ npm start
 
 ---
 
-## 🐳 Running with Docker
+## 5.4 Running with Docker
 
 Build and start containers using:
 
@@ -182,7 +182,7 @@ docker-compose down
 
 ---
 
-## 🔐 Authentication Setup
+## 5.6 Authentication Setup
 
 1. Start Keycloak server.
 2. Create a new realm.
@@ -192,7 +192,7 @@ docker-compose down
 
 ---
 
-##  Application Access
+## 5.7 Application Access
 
 After starting all services:
 
